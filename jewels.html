@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radiant Jewels</title>
+    <style>
+      #outlook {
+        background-color: rgb(216, 190, 122);
+      }
+      #heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(85, 3, 3);
+      }
+      #image1 {
+        width: 150px;
+        background-color: antiquewhite;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      #loop {
+        color: rgb(95, 2, 2);
+      }
+      #content1 {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(116, 7, 112);
+        width: 500px;
+        padding: 20px;
+        border: 2px solid brown;
+      }
+      #image2 {
+        padding: 10px;
+        background-color: blanchedalmond;
+        width: 300px;
+        border-radius: 20px;
+      }
+      #redirect {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+      }
+      #text {
+        color: rgb(95, 2, 2);
+        font-size: 15px;
+      }
+      #card {
+        background-color: whitesmoke;
+        width: 300px;
+        padding: 15px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0%;
+      }
+      #card img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+        border-radius: 5px;
+        margin-bottom: 2px;
+      }
+      #card h1 {
+        margin: 0%;
+      }
+    </style>
+  </head>
+  <body id="outlook">
+    <h1 id="heading">✨ RADIANT JEWELS ✨</h1>
+    <marquee id="loop">
+      <b><h2>CHERISH YOURSELF WITH THE ESSENCE OF PURITY</h2></b>
+    </marquee>
+
+    <center>
+      <img id="image1" src="images1/1.png" />
+      <p id="content1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat
+        dicta omnis enim quos ut ab nulla. Quo voluptatibus excepturi culpa
+        voluptas perferendis ratione saepe illum soluta sunt dolorem, veniam
+        optio provident fugiat, explicabo nostrum at repudiandae itaque
+        accusamus doloribus. Eos fugit accusamus, quia a itaque porro temporibus
+        nihil incidunt.
+      </p>
+      <img
+        id="image2"
+        src="https://th.bing.com/th/id/OIP.xTOrNO2jf0WREkEmFvSs9AHaFj?w=243&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+      />
+    </center>
+
+    <p id="redirect">Click down to get more information !</p>
+    <center>
+      <button
+        id="mybutton"
+        onclick="document.getElementById('redirect').innerHTML='Exclusively designed Silver Jewelery with Auspicious Real stones..'"
+      >
+        Know more
+      </button>
+    </center>
+    <p id="text">==> Why to trust us?</p>
+    <ul id="text">
+      <li>Exclusivity</li>
+      <li>Purity and sanity</li>
+      <li>Interactive purchase through our open forum</li>
+      <li>Great Customer Purchase and Feedback</li>
+    </ul>
+    <br />
+    <p id="text">==> Platform to interacte with us</p>
+
+    <!-- Instagram link -->
+    <a
+      href="https://www.instagram.com/_radiant_jewels/?next=%2Ftithi.jain01%2F"
+      target="_blank"
+    >
+      <ul>
+        <li>Instagram</li>
+      </ul>
+    </a>
+
+    <!-- Whatsapp link -->
+    <a href="https://www.whatsapp.com/download/" target="_blank">
+      <ul>
+        <li>whatsapp</li>
+      </ul>
+    </a>
+
+    <!-- designer box making with pic alignment -->
+    <div id="card">
+      <img src="images1/grass.jpg" />
+      <h1>Card</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+        facere!
+      </p>
+    </div>
+  </body>
+</html>

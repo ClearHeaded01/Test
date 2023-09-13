@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get well soon!</title>
+    <style>
+      body {
+        background-color: #44ffe0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        position: relative;
+        padding: 0;
+      }
+      .card {
+        position: absolute;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+        height: 400px;
+        width: 300px;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        flex-direction: column;
+        transition: 1s;
+        gap: 10px;
+      }
+
+      .removed {
+        transform: translate(50%, 50%) rotate(45deg) scale(0);
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="card final">
+        Hope you get well soon 😇
+        <br />
+        <div
+          class="tenor-gif-embed"
+          data-postid="24156207"
+          data-share-method="host"
+          data-aspect-ratio="1.77778"
+          data-width="100%"
+        >
+          <a href="https://tenor.com/view/get-well-soon-gif-24156207"
+            >Get Well Soon GIF</a
+          >
+        </div>
+        <script
+          type="text/javascript"
+          async
+          src="https://tenor.com/embed.js"
+        ></script>
+      </div>
+      <div class="card myself">
+        <i>Sigh...</i>
+        <br /><span
+          >you won't listen na, okay i'll tap this one myself 😾 in
+          <span class="timer">4</span></span
+        >
+      </div>
+      <div class="card">
+        I said don't tappp you keep doing what i tell you not to do 😭😭
+        <br /><br />
+        please don't do that on this one 🥺
+      </div>
+      <div class="card">
+        ohh, you tapped anyway😒<br /><br />okay np<br /><br />just don't tap on
+        this one 😤
+      </div>
+      <div class="card">
+        Yo, hope you're feeling good<br /><br />
+        Don't tap on this btw 👀
+      </div>
+    </div>
+  </body>
+  <script>
+    const cards = document.querySelectorAll(".card");
+    const timer = document.querySelector("span.timer");
+    cards.forEach((elem) => {
+      elem.addEventListener("click", () => {
+        console.log(elem.previousElementSibling);
+        if (elem.previousElementSibling.classList.contains("myself")) {
+          elem.classList.add("removed");
+          setInterval(() => {
+            timer.innerHTML = parseInt(timer.innerHTML) - 1;
+          }, 1000);
+          setTimeout(() => {
+            elem.previousElementSibling.classList.add("removed");
+          }, 4000);
+        } else if (!elem.classList.contains("final")) {
+          elem.classList.add("removed");
+        }
+      });
+    });
+  </script>
+</html>

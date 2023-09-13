@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* width that will remain constant regardless of padding and border */
+      }
+
+      body {
+        background-color: #16364b;
+      }
+
+      #card {
+        background-color: white;
+        width: 300px;
+        padding: 30px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+        box-shadow: 0px 0px 15px #000000; /* box-shadow: leftOffset topOffset blurAmount color */
+      }
+
+      #card h1 {
+        margin-top: 30px;
+        font-family: sans-serif;
+      }
+
+      #card img {
+        width: 100%;
+        /* height: 100px; */
+        object-fit: cover;
+        border-radius: 5px;
+        aspect-ratio: 1 / 1;
+        margin-top: -60px;
+        box-shadow: 0px 0px 5px #000000; /* box-shadow: leftOffset topOffset blurAmount color */
+      }
+
+      #card p {
+        text-align: center;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        font-weight: 500;
+      }
+
+      #p-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="p-cards">
+      <div id="card">
+        <img src="images1/grass.jpg" />
+      </div>
+      <div id="card">
+        <img src="images1/blue rose.jpg" />
+        <h1>Card</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          mollitia earum totam eligendi molestias velit maiores cumque sapiente!
+          Autem, porro.
+        </p>
+      </div>
+      <div id="card">
+        <img src="images1/rose garden.jpg" />
+      </div>
+    </div>
+  </body>
+</html>
